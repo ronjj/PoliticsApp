@@ -8,13 +8,25 @@
 import SwiftUI
 
 struct NewsDetailView: View {
+    
+    @Binding var news: News
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView{
+            VStack{
+                Text(news.headline)
+                    .font(.headline)
+                    .fontWeight(.bold)
+                    .foregroundColor(.black)
+                
+                Text(news.articleContents)
+                    .font(.body)
+                    
+                
+            }
+        }
+
     }
 }
 
-struct NewsDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        NewsDetailView()
-    }
-}
+

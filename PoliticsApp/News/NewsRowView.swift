@@ -12,23 +12,21 @@ struct NewsRowView: View {
     
     var body: some View {
         
-        ZStack {
-            Color.testBG.edgesIgnoringSafeArea(.all)
-            
             VStack(alignment: .leading, spacing: 10) {
                 Text(news.headline)
                     .fontWeight(.bold)
                     .foregroundColor(.black)
+                    .multilineTextAlignment(.leading)
                 Text(news.shortDesc)
                     .foregroundColor(.gray)
                     .multilineTextAlignment(.leading)
+                
+                Text("Click To Read More >")
+                    .font(.caption2)
+                    
             }
             .padding()
-        }
-        .frame(minWidth: 360, maxWidth: 720, minHeight: 200, maxHeight: 400)
-        .cornerRadius(20)
-        //.shadow(color: .bg, radius: 30, x: 0, y: 15)
-        .padding(5)
+        
     }
 }
 

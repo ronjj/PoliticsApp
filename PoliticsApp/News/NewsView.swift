@@ -9,8 +9,13 @@ import SwiftUI
 
 struct NewsView: View {
     var body: some View {
-        VStack{
-            NewsListView()
+        NavigationView {
+            VStack{
+                NewsListView()
+            }
+            .navigationTitle("News")
+            .navigationBarTitleDisplayMode(.large)
+            
         }
     }
 }
