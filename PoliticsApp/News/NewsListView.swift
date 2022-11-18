@@ -12,16 +12,12 @@ struct NewsListView: View {
     
     var body: some View {
         VStack{
-            ForEach($news) { item in
-                
+            ForEach($news) { news in
+                NewsRowView(news: news)
                 
             }
         }
     }
 }
 
-struct NewsListView_Previews: PreviewProvider {
-    static var previews: some View {
-        NewsListView()
-    }
-}
+

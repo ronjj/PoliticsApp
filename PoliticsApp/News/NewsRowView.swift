@@ -11,12 +11,15 @@ struct NewsRowView: View {
     @Binding var news: News
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading, spacing: 10) {
+            Text(news.headline)
+                .fontWeight(.bold)
+            Text(news.shortDesc)
+                .foregroundColor(.gray)
+                .multilineTextAlignment(.leading)
+        }
+        .padding()
     }
 }
 
-struct NewsRowView_Previews: PreviewProvider {
-    static var previews: some View {
-        NewsRowView()
-    }
-}
+

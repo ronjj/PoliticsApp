@@ -23,7 +23,7 @@ extension News {
 
     ]
     
-    private static let canada = News(headline: "Canada October producer prices up 2.4% on petroleum products", shortDesc: "Nov 18 (Reuters) - Producer prices in Canada rose by 2.4% in October from September on higher prices for refined petroleum energy products, Statistics Canada said on Friday. The depreciating Canadian dollar continued to affect prices.", articleContents: "lorem ipsum delorum. ipsum delorum,  ipsum delorum")
+    private static let canada = News(headline: "Canada October producer prices up 2.4% on petroleum products", shortDesc: "Nov 18 (Reuters) - Producer prices in Canada rose by 2.4% in October from September on higher prices", articleContents: "lorem ipsum delorum. ipsum delorum,  ipsum delorum")
 
     private static let twitter = News(headline: "After Elon Musk's ultimatum, Twitter employees start exiting", shortDesc: "Hundreds of Twitter Inc employees are estimated to have decided to quit the beleaguered social media company following a Thursday deadline from new owner Elon Musk that staffers sign up... , " , articleContents: "lorem ipsum delorum")
 
