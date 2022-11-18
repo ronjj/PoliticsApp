@@ -11,10 +11,13 @@ struct NewsListView: View {
     @State var news: [News] = News.dummyData
     
     var body: some View {
-        VStack{
-            ForEach($news) { news in
-                NewsRowView(news: news)
-                
+        
+        ScrollView(.vertical) {
+            VStack{
+                ForEach($news) { news in
+                    NewsRowView(news: news)
+                    
+                }
             }
         }
     }
