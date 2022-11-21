@@ -17,6 +17,8 @@
 		543CC7D82927C7D9006344F7 /* NewsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543CC7D72927C7D9006344F7 /* NewsRowView.swift */; };
 		543CC7DC2927CD51006344F7 /* Colors + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543CC7DB2927CD51006344F7 /* Colors + Ext.swift */; };
 		543CC7DE2927CDF5006344F7 /* NewsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543CC7DD2927CDF5006344F7 /* NewsDetailView.swift */; };
+		FD5C8EA3292AFCE200CA1A8F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5C8EA2292AFCE200CA1A8F /* MapView.swift */; };
+		FD5C8EA6292AFEE300CA1A8F /* InteractiveMap in Frameworks */ = {isa = PBXBuildFile; productRef = FD5C8EA5292AFEE300CA1A8F /* InteractiveMap */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,7 @@
 		543CC7D72927C7D9006344F7 /* NewsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRowView.swift; sourceTree = "<group>"; };
 		543CC7DB2927CD51006344F7 /* Colors + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors + Ext.swift"; sourceTree = "<group>"; };
 		543CC7DD2927CDF5006344F7 /* NewsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailView.swift; sourceTree = "<group>"; };
+		FD5C8EA2292AFCE200CA1A8F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD5C8EA6292AFEE300CA1A8F /* InteractiveMap in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +67,7 @@
 		543CC7C12927C011006344F7 /* PoliticsApp */ = {
 			isa = PBXGroup;
 			children = (
+				FD5C8EA1292AFCB000CA1A8F /* HomeView */,
 				543CC7DA2927CD46006344F7 /* Utilities */,
 				543CC7D22927C3AF006344F7 /* News */,
 				543CC7C22927C011006344F7 /* PoliticsAppApp.swift */,
@@ -101,6 +106,14 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		FD5C8EA1292AFCB000CA1A8F /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				FD5C8EA2292AFCE200CA1A8F /* MapView.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -117,6 +130,9 @@
 			dependencies = (
 			);
 			name = PoliticsApp;
+			packageProductDependencies = (
+				FD5C8EA5292AFEE300CA1A8F /* InteractiveMap */,
+			);
 			productName = PoliticsApp;
 			productReference = 543CC7BF2927C011006344F7 /* PoliticsApp.app */;
 			productType = "com.apple.product-type.application";
@@ -145,6 +161,9 @@
 				Base,
 			);
 			mainGroup = 543CC7B62927C011006344F7;
+			packageReferences = (
+				FD5C8EA4292AFEE300CA1A8F /* XCRemoteSwiftPackageReference "InteractiveMap" */,
+			);
 			productRefGroup = 543CC7C02927C011006344F7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -178,6 +197,7 @@
 				543CC7D82927C7D9006344F7 /* NewsRowView.swift in Sources */,
 				543CC7D62927C5AC006344F7 /* NewsListView.swift in Sources */,
 				543CC7D42927C3B7006344F7 /* News.swift in Sources */,
+				FD5C8EA3292AFCE200CA1A8F /* MapView.swift in Sources */,
 				543CC7C32927C011006344F7 /* PoliticsAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,6 +399,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FD5C8EA4292AFEE300CA1A8F /* XCRemoteSwiftPackageReference "InteractiveMap" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GrandSir/InteractiveMap";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FD5C8EA5292AFEE300CA1A8F /* InteractiveMap */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD5C8EA4292AFEE300CA1A8F /* XCRemoteSwiftPackageReference "InteractiveMap" */;
+			productName = InteractiveMap;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 543CC7B72927C011006344F7 /* Project object */;
 }
