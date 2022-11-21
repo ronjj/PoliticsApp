@@ -17,6 +17,7 @@
 		543CC7D82927C7D9006344F7 /* NewsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543CC7D72927C7D9006344F7 /* NewsRowView.swift */; };
 		543CC7DC2927CD51006344F7 /* Colors + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543CC7DB2927CD51006344F7 /* Colors + Ext.swift */; };
 		543CC7DE2927CDF5006344F7 /* NewsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543CC7DD2927CDF5006344F7 /* NewsDetailView.swift */; };
+		9F13B8DB292AF96300B5B01A /* YourAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F13B8DA292AF96300B5B01A /* YourAreaView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		543CC7D72927C7D9006344F7 /* NewsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRowView.swift; sourceTree = "<group>"; };
 		543CC7DB2927CD51006344F7 /* Colors + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors + Ext.swift"; sourceTree = "<group>"; };
 		543CC7DD2927CDF5006344F7 /* NewsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailView.swift; sourceTree = "<group>"; };
+		9F13B8DA292AF96300B5B01A /* YourAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourAreaView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		543CC7C12927C011006344F7 /* PoliticsApp */ = {
 			isa = PBXGroup;
 			children = (
+				9F13B8D9292AF62A00B5B01A /* YourArea */,
 				543CC7DA2927CD46006344F7 /* Utilities */,
 				543CC7D22927C3AF006344F7 /* News */,
 				543CC7C22927C011006344F7 /* PoliticsAppApp.swift */,
@@ -99,6 +102,14 @@
 				543CC7DB2927CD51006344F7 /* Colors + Ext.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		9F13B8D9292AF62A00B5B01A /* YourArea */ = {
+			isa = PBXGroup;
+			children = (
+				9F13B8DA292AF96300B5B01A /* YourAreaView.swift */,
+			);
+			path = YourArea;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +190,7 @@
 				543CC7D62927C5AC006344F7 /* NewsListView.swift in Sources */,
 				543CC7D42927C3B7006344F7 /* News.swift in Sources */,
 				543CC7C32927C011006344F7 /* PoliticsAppApp.swift in Sources */,
+				9F13B8DB292AF96300B5B01A /* YourAreaView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
