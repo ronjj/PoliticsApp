@@ -9,7 +9,15 @@ import SwiftUI
 
 struct YourAreaView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView{
+            VStack {
+                PoliticianRowView()
+                NewsListView()
+            }
+            .navigationTitle("Your Area")
+            .navigationBarTitleDisplayMode(.large)
+        }
+        
     }
 }
 
