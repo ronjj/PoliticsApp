@@ -13,6 +13,8 @@ struct ArticleListView: View {
     @State private var selectedArticle: Article?
     
     var body: some View {
+        //CategoriesView()
+        
         List {
             ForEach(articles) { article in
                 ArticleRowView(article: article)

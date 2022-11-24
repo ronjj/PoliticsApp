@@ -22,7 +22,7 @@ struct NewsTabView: View {
                 .refreshable(action: refreshTask)
                 .navigationTitle(articlesNewsVM.fetchTaskToken.category.text)
                 .navigationBarItems(trailing: menu)
-        }
+            }
         .searchable(text: $searchText)
     }
     
@@ -85,6 +85,7 @@ struct NewsTabView: View {
         } label: {
             Image(systemName: "fiberchannel")
         }
+        .menuStyle(.borderlessButton)
     }
 }
 
