@@ -8,14 +8,25 @@
 import SwiftUI
 
 struct YourAreaView: View {
+    @State private var isShowingSettings = false
+
     var body: some View {
-        ScrollView{
-            VStack {
-                PoliticianRowView()
-                NewsListView()
+        NavigationView{
+            ScrollView{
+                VStack {
+                    PoliticianRowView()
+                    NewsListView()
+                }
             }
             .navigationTitle("Your Area")
             .navigationBarTitleDisplayMode(.large)
+            .toolbar {
+                NavigationLink {
+                    SettingsView()
+                } label: {
+                    Label("Settings", systemImage: "gearshape")
+                }
+            }
         }
         
     }
