@@ -11,8 +11,7 @@ import SwiftUI
 struct PoliticsAppApp: App {
     var body: some Scene {
         WindowGroup {
-//            NewsView()
-            YourAreaView()
+            ContentView()
         }
     }
 }

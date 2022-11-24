@@ -19,8 +19,6 @@ extension News {
     static let dummyData: [News] = [
         
         canada, twitter, ftx
-        
-
     ]
     
     private static let canada = News(headline: "Canada October producer prices up 2.4% on petroleum products", shortDesc: "Nov 18 (Reuters) - Producer prices in Canada rose by 2.4% in October from September on higher prices", articleContents: "lorem ipsum delorum. ipsum delorum,  ipsum delorum")

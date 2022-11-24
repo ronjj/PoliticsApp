@@ -2,25 +2,33 @@
 //  ContentView.swift
 //  PoliticsApp
 //
-//  Created by Ronald Jabouin on 11/18/22.
+//  Created by Ronald Jabouin on 11/23/22.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView{
+            replace1()
+                .tabItem{
+                    Image(systemName: "house")
+                    Text("Home")
+                }
+            
+            
+            NewsView()
+                .tabItem{
+                    Image(systemName: "newspaper")
+                    Text("News")
+                }
+            
+            replace2()
+                .tabItem{
+                    Image(systemName: "mappin")
+                    Text("Your Area")
+                }
         }
-        .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
