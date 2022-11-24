@@ -17,7 +17,7 @@ struct ContentView: View {
                 }
             
             
-            NewsView()
+            NewsTabView()
                 .tabItem{
                     Image(systemName: "newspaper")
                     Text("News")
