@@ -15,15 +15,12 @@ struct ContentView: View {
                     Image(systemName: "house")
                     Text("Home")
                 }
-            
-            
             NewsView()
                 .tabItem{
                     Image(systemName: "newspaper")
                     Text("News")
                 }
-            
-            replace2()
+            YourAreaView()
                 .tabItem{
                     Image(systemName: "mappin")
                     Text("Your Area")
