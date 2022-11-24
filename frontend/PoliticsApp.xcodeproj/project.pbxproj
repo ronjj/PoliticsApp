@@ -19,6 +19,7 @@
 		543CC7DE2927CDF5006344F7 /* NewsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543CC7DD2927CDF5006344F7 /* NewsDetailView.swift */; };
 		5475BE32292F04100009EB0D /* replace1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5475BE31292F04100009EB0D /* replace1.swift */; };
 		5475BE34292F048E0009EB0D /* replace2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5475BE33292F048E0009EB0D /* replace2.swift */; };
+		5475BE36292F0E070009EB0D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5475BE35292F0E070009EB0D /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		543CC7DD2927CDF5006344F7 /* NewsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailView.swift; sourceTree = "<group>"; };
 		5475BE31292F04100009EB0D /* replace1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = replace1.swift; sourceTree = "<group>"; };
 		5475BE33292F048E0009EB0D /* replace2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = replace2.swift; sourceTree = "<group>"; };
+		5475BE35292F0E070009EB0D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				543CC7D22927C3AF006344F7 /* News */,
 				543CC7C22927C011006344F7 /* PoliticsAppApp.swift */,
 				543CC7C42927C011006344F7 /* ContentView.swift */,
+				5475BE35292F0E070009EB0D /* ContentView.swift */,
 				5475BE31292F04100009EB0D /* replace1.swift */,
 				5475BE33292F048E0009EB0D /* replace2.swift */,
 				543CC7C62927C011006344F7 /* Assets.xcassets */,
@@ -178,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				543CC7D12927C3A7006344F7 /* NewsView.swift in Sources */,
+				5475BE36292F0E070009EB0D /* ContentView.swift in Sources */,
 				5475BE34292F048E0009EB0D /* replace2.swift in Sources */,
 				543CC7C52927C011006344F7 /* ContentView.swift in Sources */,
 				543CC7DE2927CDF5006344F7 /* NewsDetailView.swift in Sources */,
