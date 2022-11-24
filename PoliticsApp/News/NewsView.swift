@@ -11,6 +11,16 @@ struct NewsView: View {
     var body: some View {
         NavigationView {
             VStack{
+            
+                //Mock Searchbar
+                //Didn't put actual searchbar since
+                //we dont have actual data yet
+                Rectangle()
+                    .frame(height: 30)
+                    .foregroundColor(.gray)
+                    .cornerRadius(8)
+                    .padding()
+                
                 NewsListView()
             }
             .navigationTitle("News")
@@ -20,8 +30,3 @@ struct NewsView: View {
     }
 }
 
-struct NewsView_Previews: PreviewProvider {
-    static var previews: some View {
-        NewsView()
-    }
-}

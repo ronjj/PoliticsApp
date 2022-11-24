@@ -13,10 +13,11 @@ struct NewsListView: View {
     var body: some View {
         
         ScrollView(.vertical) {
-            VStack(alignment: .leading){
+            VStack{
                 ForEach($news) { news in
                     NavigationLink(destination: NewsDetailView(news: news)) {
                         NewsRowView(news: news)
+                        
                     }
                 }
             }

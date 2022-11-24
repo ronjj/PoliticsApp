@@ -9,13 +9,32 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        
+        //TODO: When page is selected, show filled version of icon
+            //Ex: newspaper becomes newspaper.fill when selected
+        
+        TabView{
+            replace2()
+                .tabItem{
+                    Image(systemName: "house")
+                    Text("Home")
+                }
+            
+            NewsView()
+                .tabItem{
+                    Image(systemName: "newspaper")
+                    Text("News")
+                }
+            
+            replace1()
+                .tabItem{
+                    Image(systemName: "map")
+                    Text("Your Area")
+                }
+            
         }
-        .padding()
+        // can also add an accent color later with
+        //.accentColor(.color)
     }
 }
 

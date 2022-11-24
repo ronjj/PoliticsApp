@@ -20,13 +20,13 @@ struct NewsRowView: View {
                 Text(news.shortDesc)
                     .foregroundColor(.gray)
                     .multilineTextAlignment(.leading)
+
                 
                 Text("Click To Read More >")
                     .font(.caption2)
                     
             }
             .padding()
-        
     }
 }
 

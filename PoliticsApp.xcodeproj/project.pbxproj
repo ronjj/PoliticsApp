@@ -17,6 +17,8 @@
 		543CC7D82927C7D9006344F7 /* NewsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543CC7D72927C7D9006344F7 /* NewsRowView.swift */; };
 		543CC7DC2927CD51006344F7 /* Colors + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543CC7DB2927CD51006344F7 /* Colors + Ext.swift */; };
 		543CC7DE2927CDF5006344F7 /* NewsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543CC7DD2927CDF5006344F7 /* NewsDetailView.swift */; };
+		5475BE32292F04100009EB0D /* replace1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5475BE31292F04100009EB0D /* replace1.swift */; };
+		5475BE34292F048E0009EB0D /* replace2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5475BE33292F048E0009EB0D /* replace2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		543CC7D72927C7D9006344F7 /* NewsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRowView.swift; sourceTree = "<group>"; };
 		543CC7DB2927CD51006344F7 /* Colors + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors + Ext.swift"; sourceTree = "<group>"; };
 		543CC7DD2927CDF5006344F7 /* NewsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailView.swift; sourceTree = "<group>"; };
+		5475BE31292F04100009EB0D /* replace1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = replace1.swift; sourceTree = "<group>"; };
+		5475BE33292F048E0009EB0D /* replace2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = replace2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				543CC7D22927C3AF006344F7 /* News */,
 				543CC7C22927C011006344F7 /* PoliticsAppApp.swift */,
 				543CC7C42927C011006344F7 /* ContentView.swift */,
+				5475BE31292F04100009EB0D /* replace1.swift */,
+				5475BE33292F048E0009EB0D /* replace2.swift */,
 				543CC7C62927C011006344F7 /* Assets.xcassets */,
 				543CC7C82927C011006344F7 /* Preview Content */,
 			);
@@ -172,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				543CC7D12927C3A7006344F7 /* NewsView.swift in Sources */,
+				5475BE34292F048E0009EB0D /* replace2.swift in Sources */,
 				543CC7C52927C011006344F7 /* ContentView.swift in Sources */,
 				543CC7DE2927CDF5006344F7 /* NewsDetailView.swift in Sources */,
 				543CC7DC2927CD51006344F7 /* Colors + Ext.swift in Sources */,
@@ -179,6 +186,7 @@
 				543CC7D62927C5AC006344F7 /* NewsListView.swift in Sources */,
 				543CC7D42927C3B7006344F7 /* News.swift in Sources */,
 				543CC7C32927C011006344F7 /* PoliticsAppApp.swift in Sources */,
+				5475BE32292F04100009EB0D /* replace1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
