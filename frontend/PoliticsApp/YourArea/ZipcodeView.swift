@@ -8,19 +8,36 @@
 import SwiftUI
 
 struct ZipcodeView: View {
-    @Binding var zip: String
-    @State var currentZip: String
+    @StateObject var userVM = UserVM()
+    
+    //TODO: If success first try, need to make alert appear
+    //TODO: Make screen refreshable and see if that can make the your area screen appear
     
     var body: some View {
         NavigationView{
-            VStack{
-                TextField("Enter your zip code", text: $currentZip)
-                Button {
-                    zip = currentZip
-                } label: {
-                    Text("Submit")
+            Form{
+                Section(header: Text("Zip Code")) {
+                    TextField("Enter your zip code", text: $userVM.user.zipCode)
+                    Button {
+                        userVM.saveChanges()
+                        print(userVM.user.zipCode)
+                    } label: {
+                        Text("Submit")
+                    }
                 }
+               
+                
             }
+            .navigationTitle("Your Zip Code")
+        }
+        .onAppear{
+            userVM.retrieveUser()
+        }
+        .alert(item: $userVM.alertItem) { alertItem in
+            Alert(title: alertItem.title,
+                  message: alertItem.message,
+                  dismissButton: alertItem.dismissButton)
+            
         }
     }
 }

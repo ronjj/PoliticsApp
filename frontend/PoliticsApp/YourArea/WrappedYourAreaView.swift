@@ -8,15 +8,22 @@
 import SwiftUI
 
 struct WrappedYourAreaView: View {
-    @State private var zip: String = ""
+    //@State private var zip: String = ""
+    @StateObject var userVM = UserVM()
     
     var body: some View {
-        if (zip == "") {
-            ZipcodeView(zip: $zip, currentZip: "")
+        ZStack{
+            if (userVM.user.zipCode == "") {
+                ZipcodeView()
+            } else {
+                YourAreaView()
+            }
         }
-        else {
-            YourAreaView()
+        .onAppear{
+            userVM.retrieveUser()
+            print(userVM.user.zipCode)
         }
+
     }
 }
 

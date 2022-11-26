@@ -31,9 +31,3 @@ struct YourAreaView: View {
         
     }
 }
-
-struct YourAreaView_Previews: PreviewProvider {
-    static var previews: some View {
-        YourAreaView()
-    }
-}

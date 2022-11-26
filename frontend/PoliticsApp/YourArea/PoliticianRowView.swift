@@ -8,11 +8,19 @@
 import SwiftUI
 
 struct PoliticianRowView: View {
+    
+    @ObservedObject var userVM = UserVM()
     var body: some View {
         HStack{
-            Text("Senator")
+            Spacer()
+            Text("Senator for \(userVM.user.zipCode)")
             Spacer()
             Circle()
+                .frame(width: 20,height: 20)
+            Spacer()
+        }
+        .onAppear() {
+            userVM.retrieveUser()
         }
     }
 }
