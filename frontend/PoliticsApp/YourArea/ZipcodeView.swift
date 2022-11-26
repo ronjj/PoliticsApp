@@ -18,6 +18,7 @@ struct ZipcodeView: View {
             Form{
                 Section(header: Text("Zip Code")) {
                     TextField("Enter your zip code", text: $userVM.user.zipCode)
+                        .keyboardType(.decimalPad)
                     Button {
                         userVM.saveChanges()
                         print(userVM.user.zipCode)
