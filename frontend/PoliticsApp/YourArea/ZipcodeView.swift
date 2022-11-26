@@ -10,7 +10,6 @@ import SwiftUI
 struct ZipcodeView: View {
     @StateObject var userVM = UserVM()
     
-    //TODO: If success first try, need to make alert appear
     //TODO: Make screen refreshable and see if that can make the your area screen appear
     
     var body: some View {
@@ -18,7 +17,7 @@ struct ZipcodeView: View {
             Form{
                 Section(header: Text("Zip Code")) {
                     TextField("Enter your zip code", text: $userVM.user.zipCode)
-                        .keyboardType(.decimalPad)
+                        .keyboardType(.numberPad)
                     Button {
                         userVM.saveChanges()
                         print(userVM.user.zipCode)
@@ -26,8 +25,6 @@ struct ZipcodeView: View {
                         Text("Submit")
                     }
                 }
-               
-                
             }
             .navigationTitle("Your Zip Code")
         }
@@ -38,7 +35,6 @@ struct ZipcodeView: View {
             Alert(title: alertItem.title,
                   message: alertItem.message,
                   dismissButton: alertItem.dismissButton)
-            
         }
     }
 }

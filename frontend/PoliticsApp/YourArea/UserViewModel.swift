@@ -22,7 +22,6 @@ final class UserVM: ObservableObject{
             return false
             
         }
-
         
         //Check if field is a valid zipcode
         //only numbers, length of 5, is a valid us zipcode
