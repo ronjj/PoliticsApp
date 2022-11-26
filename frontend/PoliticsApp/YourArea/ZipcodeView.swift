@@ -8,20 +8,20 @@
 import SwiftUI
 
 struct ZipcodeView: View {
-    @State private var zip: String = ""
-
+    @Binding var zip: String
+    @State var currentZip: String
+    
     var body: some View {
         NavigationView{
             VStack{
-                TextField("Enter your zip code", text: $zip)
-                Text("Your zip is \(zip)")
+                TextField("Enter your zip code", text: $currentZip)
+                Button {
+                    zip = currentZip
+                } label: {
+                    Text("Submit")
+                }
             }
         }
     }
 }
 
-struct ZipcodeView_Previews: PreviewProvider {
-    static var previews: some View {
-        ZipcodeView()
-    }
-}

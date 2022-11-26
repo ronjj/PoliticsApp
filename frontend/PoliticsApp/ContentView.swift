@@ -20,8 +20,8 @@ struct ContentView: View {
                     Image(systemName: "newspaper")
                     Text("News")
                 }
-            YourAreaView()
-                .tabItem{
+            WrappedYourAreaView()
+                .tabItem {
                     Image(systemName: "mappin")
                     Text("Your Area")
                 }
