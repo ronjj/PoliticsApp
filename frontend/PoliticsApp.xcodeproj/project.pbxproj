@@ -19,6 +19,7 @@
 		543CC7DE2927CDF5006344F7 /* NewsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543CC7DD2927CDF5006344F7 /* NewsDetailView.swift */; };
 		FD5C8EA3292AFCE200CA1A8F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5C8EA2292AFCE200CA1A8F /* MapView.swift */; };
 		FD5C8EA6292AFEE300CA1A8F /* InteractiveMap in Frameworks */ = {isa = PBXBuildFile; productRef = FD5C8EA5292AFEE300CA1A8F /* InteractiveMap */; };
+		FD5C8EA8292B1D1000CA1A8F /* usa-low.svg in Resources */ = {isa = PBXBuildFile; fileRef = FD5C8EA7292B1D1000CA1A8F /* usa-low.svg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		543CC7DB2927CD51006344F7 /* Colors + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors + Ext.swift"; sourceTree = "<group>"; };
 		543CC7DD2927CDF5006344F7 /* NewsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailView.swift; sourceTree = "<group>"; };
 		FD5C8EA2292AFCE200CA1A8F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		FD5C8EA7292B1D1000CA1A8F /* usa-low.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "usa-low.svg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				FD5C8EA2292AFCE200CA1A8F /* MapView.swift */,
+				FD5C8EA7292B1D1000CA1A8F /* usa-low.svg */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD5C8EA8292B1D1000CA1A8F /* usa-low.svg in Resources */,
 				543CC7CA2927C011006344F7 /* Preview Assets.xcassets in Resources */,
 				543CC7C72927C011006344F7 /* Assets.xcassets in Resources */,
 			);
@@ -327,7 +331,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PoliticsApp/Preview Content\"";
-				DEVELOPMENT_TEAM = Y72HF9FX59;
+				DEVELOPMENT_TEAM = ZH8B2FX8PP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -356,7 +360,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PoliticsApp/Preview Content\"";
-				DEVELOPMENT_TEAM = Y72HF9FX59;
+				DEVELOPMENT_TEAM = ZH8B2FX8PP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

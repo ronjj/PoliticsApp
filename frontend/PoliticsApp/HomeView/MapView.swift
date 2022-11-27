@@ -14,28 +14,35 @@ import SwiftUI
 //}
 import InteractiveMap
 
-struct MapView: View {
+struct MapView : View {
     @State private var clickedPath = PathData()
-    var body: some View {
-        VStack {
-            Text(clickedPath.name.isEmpty ? "" : "\(clickedPath.name) is clicked!" )
-                .font(.largeTitle)
-                .padding(.bottom, 15)
-
-            InteractiveMap(svgName: "tr") { pathData in // is a PathData
+    @State var currentScale: CGFloat = 0
+    @State var finalScale: CGFloat = 1
+    
+    var body : some View {
+        VStack{
+            InteractiveMap(svgName: "usa-low") { pathData in
                 InteractiveShape(pathData)
-                    .stroke(clickedPath == pathData ? .cyan : .red, lineWidth: 1)
-                    .shadow(color: clickedPath == pathData ? .cyan : .red,  radius: 3)
-                    .shadow(color: clickedPath == pathData ? .cyan : .clear , radius: 3) // to increase the glow amount
-                    .background(InteractiveShape(pathData).fill(Color(white: 0.15))) // filling the shapes
-                    .shadow(color: clickedPath == pathData ? .black : .clear , radius: 5, y: 1) // for depth
-
+                    .stroke(clickedPath == pathData ? .indigo : .pink, lineWidth: 1)
+                    .background(InteractiveShape(pathData).fill(Color(white: 0.1)))
+                    .shadow(
+                        color: clickedPath == pathData ? .indigo : .pink, radius: clickedPath == pathData ? 10 : 1
+                    )
                     .onTapGesture {
                         clickedPath = pathData
                     }
-                    .zIndex(clickedPath == pathData ? 2 : 1) // this is REQUIRED because InteractiveShapes overlap, resulting in an ugly appearance
-                    .animation(.easeInOut(duration: 0.3), value: clickedPath)
             }
+            .scaleEffect(finalScale + currentScale)
+            .gesture(
+                MagnificationGesture()
+                    .onChanged{ newScale in
+                        currentScale = newScale
+                    }
+                    .onEnded{ scale in
+                        finalScale = scale
+                        currentScale = 0
+                    }
+            )
         }
     }
 }
