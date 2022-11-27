@@ -22,10 +22,8 @@ struct NewsDetailView: View {
                 Text(news.articleContents)
                     .font(.body)
                     
-                
             }
         }
-
     }
 }
 
