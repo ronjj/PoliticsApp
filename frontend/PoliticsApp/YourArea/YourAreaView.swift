@@ -12,8 +12,14 @@ struct YourAreaView: View {
         NavigationView{
             ScrollView{
                 VStack {
-                    PoliticianRowView()
-                    PoliticianRowView()
+                    PoliticianRowView(polType: "House")
+                    PoliticianRowView(polType: "Senate")
+                    HStack{
+                        Text("News")
+                            .font(.largeTitle)
+                            .padding()
+                        Spacer()
+                    }
                     NewsListView()
                 }
             }

@@ -8,9 +8,21 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @ObservedObject var userVM = UserVM()
     var body: some View {
-        Text("This will be the settings view.")
+        NavigationView{
+            VStack{
+                Text("Your zip code is \(userVM.user.zipCode).")
+                Spacer()
+            }
+            .navigationTitle("Settings")
+            .navigationBarTitleDisplayMode(.large)
+            .onAppear() {
+                userVM.retrieveUser()
+            }
+        }
     }
+    
 }
 
 struct SettingsView_Previews: PreviewProvider {
