@@ -8,12 +8,11 @@
 import SwiftUI
 
 struct YourAreaView: View {
-    @State private var isShowingSettings = false
-
     var body: some View {
         NavigationView{
             ScrollView{
                 VStack {
+                    PoliticianRowView()
                     PoliticianRowView()
                     NewsListView()
                 }

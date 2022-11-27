@@ -7,12 +7,15 @@
 
 import SwiftUI
 
-final class UserVM: ObservableObject{
-    
+final class UserVM: ObservableObject {
     @AppStorage("user") private var userData: Data?
     
     @Published var user = User()
     @Published var alertItem: AlertItem?
+    
+    var isValidZip: Bool {
+        return user.zipCode.count == 5 && user.zipCode.isNumber
+    }
     
     var isValidForm: Bool {
         
@@ -20,20 +23,18 @@ final class UserVM: ObservableObject{
         guard !user.zipCode.isEmpty else {
             alertItem = AlertContext.invalidForm
             return false
-            
         }
         
         //Check if field is a valid zipcode
-        //only numbers, length of 5, is a valid us zipcode
-        
-//        guard user.email.isValidEmail else{
-//            alertItem = AlertContext.invalidEmail
-//            return false
-//        }
+        //only numbers, length of 5, is a valid us zipcode (cannot check rn)
+        guard isValidZip else{
+            alertItem = AlertContext.invalidZip
+            return false
+        }
         
         return true
     }
-    
+        
     func saveChanges() {
         guard isValidForm else { return }
         

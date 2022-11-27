@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct WrappedYourAreaView: View {
-    //@State private var zip: String = ""
     @StateObject var userVM = UserVM()
     
     var body: some View {
@@ -21,7 +20,6 @@ struct WrappedYourAreaView: View {
         }
         .onAppear{
             userVM.retrieveUser()
-            print(userVM.user.zipCode)
         }
 
     }

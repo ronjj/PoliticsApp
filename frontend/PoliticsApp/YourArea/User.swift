@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct User: Codable {
-    let name: String = ""
+    var name: String = ""
     var zipCode: String = ""
     var zipCodeEntered: Bool = false
 }
 
+extension String  {
+    var isNumber: Bool {
+        return !isEmpty && rangeOfCharacter(from: CharacterSet.decimalDigits.inverted) == nil
+    }
+}
 

@@ -22,8 +22,8 @@ struct AlertContext{
                                             message: Text("Please make sure all fields in the form were filled out"),
                                             dismissButton: .default(Text("OK")))
     
-    static let invalidEmail = AlertItem(title: Text("Invalid Email"),
-                                            message: Text("Please make sure your email is correct"),
+    static let invalidZip = AlertItem(title: Text("Invalid Zip Code"),
+                                            message: Text("Please make sure your zip code is correct"),
                                             dismissButton: .default(Text("OK")))
     
     static let userSaveSuccess = AlertItem(title: Text("Information Saved"),
