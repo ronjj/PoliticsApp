@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct ContentView: View {
     var body: some View {
@@ -15,7 +16,7 @@ struct ContentView: View {
                     Image(systemName: "house")
                     Text("Home")
                 }
-            NewsView()
+            NewsTabView()
                 .tabItem{
                     Image(systemName: "newspaper")
                     Text("News")
@@ -25,6 +26,11 @@ struct ContentView: View {
                     Image(systemName: "mappin")
                     Text("Your Area")
                 }
+        }
+        .onAppear{
+            let tabBarAppearance = UITabBarAppearance()
+            tabBarAppearance.configureWithOpaqueBackground()
+            UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
         }
     }
 }
