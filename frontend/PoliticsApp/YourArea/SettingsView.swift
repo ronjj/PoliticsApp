@@ -10,7 +10,6 @@ import SwiftUI
 struct SettingsView: View {
     @ObservedObject var userVM = UserVM()
     var body: some View {
-        NavigationView{
             VStack{
                 Text("Your zip code is \(userVM.user.zipCode).")
                 Spacer()
@@ -20,13 +19,7 @@ struct SettingsView: View {
             .onAppear() {
                 userVM.retrieveUser()
             }
-        }
+        
     }
     
-}
-
-struct SettingsView_Previews: PreviewProvider {
-    static var previews: some View {
-        SettingsView()
-    }
 }
