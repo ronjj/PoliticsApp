@@ -60,15 +60,6 @@ struct ArticleRowView: View {
                     
                     Spacer()
                     
-                   
-                    Button {
-                        
-                    } label : {
-                        Image(systemName: "bookmark")
-                    }
-                    .buttonStyle(.bordered)
-                    
-                    
                     Button {
                         presentShareSheet(url: article.articleURL)
                     } label : {
