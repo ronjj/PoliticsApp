@@ -11,10 +11,19 @@ struct ArticleListView: View {
     
     let articles: [Article]
     @State private var selectedArticle: Article?
+
     
     var body: some View {
         //CategoriesView()
-        
+        ScrollView (.horizontal){
+            HStack{
+                ForEach(Category.allCases){
+                    ReusableCategoryButton(text: $0.text, selection: Category(rawValue:$0.text.lowercased()) ?? Category.general).tag($0)
+                }
+            }
+        }
+        .scrollIndicators(.hidden)
+        .padding()
         List {
             ForEach(articles) { article in
                 ArticleRowView(article: article)

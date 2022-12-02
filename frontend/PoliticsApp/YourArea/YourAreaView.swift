@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct YourAreaView: View {
-
+    
+    @ObservedObject var articleNewsVM = ArticleNewsViewModel()
     
     var body: some View {
         NavigationView{
@@ -22,7 +23,6 @@ struct YourAreaView: View {
                             .padding()
                         Spacer()
                     }
-                   // ArticleListView(articles: vm.articles )
                 }
             }
             .navigationTitle("Your Area")
