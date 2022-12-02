@@ -27,7 +27,7 @@ Returns all the representatives in the database]
 
 
 
-
+----------------------------------------------------------------------------------------------------------------------------------------
 POST - Create user:[
 (35.188.171.193/api/user/)
 Returns the created user if succesful - including the session token, expiration time, and update token
@@ -41,7 +41,7 @@ Required inputs -
 ]
 
 
-
+----------------------------------------------------------------------------------------------------------------------------------------
 GET - Get location represenatives:[
 (35.188.171.193/api/locations/(zip_codes)/)
 Returns the represenatives connected to a zip code - if the zip code doesn't exist on the server then it creates that location, and then returns it
@@ -52,7 +52,7 @@ BUG - the current API I'm using doesn't reconisue all US zip codes so errors can
 
 
 
-
+----------------------------------------------------------------------------------------------------------------------------------------
 GET - User Represenatives:[
 (35.188.171.193/api/represenatives/)
 Returns the represenatives connected to a user
@@ -68,8 +68,8 @@ So if you want the represenatives of user id 1, then the Authorization header va
 ]
 
 
-[
-POST - Login
+----------------------------------------------------------------------------------------------------------------------------------------
+POST - Login:[
 (35.188.171.193/api/login/)
 Returns the session token, session update, and session expiration of a user
 
