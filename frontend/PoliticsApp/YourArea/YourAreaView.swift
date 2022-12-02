@@ -14,8 +14,8 @@ struct YourAreaView: View {
         NavigationView{
             ScrollView{
                 VStack {
-                    PoliticianRowView(polType: "House")
-                    PoliticianRowView(polType: "Senate")
+                    PoliticianRowView(polType: "House", politicians: ["Pol 1"])
+                    PoliticianRowView(polType: "Senate", politicians: ["Pol 1", "Pol 2"])
                     HStack{
                         Text("News")
                             .font(.largeTitle)

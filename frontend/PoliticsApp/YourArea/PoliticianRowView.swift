@@ -9,15 +9,16 @@ import SwiftUI
 
 struct PoliticianRowView: View {
     var polType: String
+    var politicians: [String]
     
     var body: some View {
         HStack{
-            Spacer()
-            Text("\(polType)")
+            Text("\(polType):")
+            Text(politicians.joined(separator: ", "))
             Spacer()
             Circle()
                 .frame(width: 20,height: 20)
-            Spacer()
         }
+        .frame(maxWidth: UIScreen.main.bounds.size.width - 100)
     }
 }

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SettingsView: View {
     
+    // TODO: replace this with userVM stuff
     @State private var pushNotifs = false
     @State private var emailNotifs = false
     @State private var notifs = false
