@@ -7,7 +7,7 @@ API calls:
 
 
 
-The first three endpoints inside the lines are for testing and help with implementation into the application (They will be removed from the final version - submission)
+The first three endpoints inside the first line segment are for testing and help with implementation into the application (They will be removed from the final version - submission)
 ***
 
 GET - All users:[
@@ -22,7 +22,6 @@ GET - ALL representatives:[
 (35.188.171.193/api/represenatives/)
 Returns all the representatives in the database]
 
-***
 
 
 
