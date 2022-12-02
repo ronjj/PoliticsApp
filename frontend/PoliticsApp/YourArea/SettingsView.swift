@@ -9,12 +9,6 @@ import SwiftUI
 
 struct SettingsView: View {
     
-    // TODO: replace this with userVM stuff
-    @State private var pushNotifs = false
-    @State private var emailNotifs = false
-    @State private var notifs = false
-    @State private var darkMode = false
-    
     @State private var presentAlert = false
     
     @ObservedObject var userVM = UserVM()
@@ -43,19 +37,12 @@ struct SettingsView: View {
                     
                     Spacer()
                 }
-                Spacer()
-                HStack{
-                    Text("Notifications")
-                        .font(.title2)
-                        .padding()
-                    Spacer()
-                }
                 VStack{
-                    Toggle("Dark mode", isOn: $darkMode)
-                    Toggle("Push notifications", isOn: $pushNotifs)
-                    Toggle("Email notifications", isOn: $emailNotifs)
-                    Toggle("notifications...", isOn: $notifs)
+                    Toggle("Dark mode", isOn: $userVM.user.darkMode)
+                    Toggle("Push notifications", isOn: $userVM.user.pushNotifs)
+                    Toggle("Email notifications", isOn: $userVM.user.emailNotifs)
                 }
+                .frame(maxWidth: UIScreen.main.bounds.size.width - 40)
                 Spacer()
                 Text("Made by Henry Toll, Jaysion Hahn, Mikayla Lin, Miranda Luo, and Ronald Jabouin")
                     .multilineTextAlignment(.center)
@@ -66,6 +53,9 @@ struct SettingsView: View {
             .navigationBarTitleDisplayMode(.large)
             .onAppear() {
                 userVM.retrieveUser()
+            }
+            .onDisappear {
+                userVM.saveChanges()
             }
     }
     

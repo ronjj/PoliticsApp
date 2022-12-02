@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct YourAreaView: View {
-
     
+    // insert getting articles here
+
     var body: some View {
         NavigationView{
             ScrollView{
@@ -17,7 +18,7 @@ struct YourAreaView: View {
                     PoliticianRowView(polType: "House", politicians: ["Pol 1"])
                     PoliticianRowView(polType: "Senate", politicians: ["Pol 1", "Pol 2"])
                     HStack{
-                        Text("News")
+                        Text("Your News")
                             .font(.largeTitle)
                             .padding()
                         Spacer()

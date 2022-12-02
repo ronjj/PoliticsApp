@@ -12,12 +12,18 @@ struct PoliticianRowView: View {
     var politicians: [String]
     
     var body: some View {
-        HStack{
+        HStack(alignment: .top) {
             Text("\(polType):")
-            Text(politicians.joined(separator: ", "))
-            Spacer()
-            Circle()
-                .frame(width: 20,height: 20)
+            VStack{
+                ForEach(politicians, id: \.self) { politician in
+                    HStack {
+                        Text(politician)
+                        Spacer()
+                        Circle()
+                            .frame(width: 20,height: 20)
+                    }
+                }
+            }
         }
         .frame(maxWidth: UIScreen.main.bounds.size.width - 100)
     }
