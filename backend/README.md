@@ -45,7 +45,7 @@ GET - Get location represenatives:[
 (35.188.171.193/api/locations/(zip_codes)/)
 Returns the represenatives connected to a zip code - if the zip code doesn't exist on the server then it creates that location, and then returns it
 
-BUG - the current API I'm using doesn't recognise all US zip codes so errors can accure - Working on it
+BUG - the current API is weird with some zip codes - Working on it
 ]
 
 
