@@ -13,18 +13,21 @@ final class UserVM: ObservableObject {
     @Published var user = User()
     @Published var alertItem: AlertItem?
     
-    // TODO: Find a database of zip codes for verification
+    //This logic is slightly incorrect I realized. Some U.S. Zip codes are
+    //4 digits. Really should just check if the user.zipcode is in an array of zipcodes
     var isValidZip: Bool {
-        return (user.zipCode.count == 5 || user.zipCode.count == 4) && user.zipCode.isNumber
+        return user.zipCode.count == 5 && user.zipCode.isNumber
     }
     
     var isValidForm: Bool {
+        
         //Check if field is empty
         guard !user.zipCode.isEmpty else {
             alertItem = AlertContext.invalidForm
             return false
         }
         
+
         guard isValidZip else{
             alertItem = AlertContext.invalidZip
             return false

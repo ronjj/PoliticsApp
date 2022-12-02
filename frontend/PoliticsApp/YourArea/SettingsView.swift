@@ -8,55 +8,18 @@
 import SwiftUI
 
 struct SettingsView: View {
-    
-    @State private var presentAlert = false
-    
     @ObservedObject var userVM = UserVM()
     var body: some View {
             VStack{
-                HStack{
-                    Text("Zipcode: \(userVM.user.zipCode)")
-                        .padding()
-                        .font(.title2)
-                    
-                    Button {
-                        presentAlert = true
-                    } label : {
-                        Image(systemName: "pencil")
-                    }
-                    .alert("Edit Zip Code", isPresented: $presentAlert, actions: {
-                        TextField("Username", text: $userVM.user.zipCode)
-                            .keyboardType(.numberPad)
-                        Button("Confirm", action: {
-                            userVM.saveChanges()
-                        })
-                        Button("Cancel", role: .cancel, action: {})
-                    }, message: {
-                        Text("Please enter your zip code.")
-                    })
-                    
-                    Spacer()
-                }
-                VStack{
-                    Toggle("Dark mode", isOn: $userVM.user.darkMode)
-                    Toggle("Push notifications", isOn: $userVM.user.pushNotifs)
-                    Toggle("Email notifications", isOn: $userVM.user.emailNotifs)
-                }
-                .frame(maxWidth: UIScreen.main.bounds.size.width - 40)
+                Text("Your zip code is \(userVM.user.zipCode).")
                 Spacer()
-                Text("Made by Henry Toll, Jaysion Hahn, Mikayla Lin, Miranda Luo, and Ronald Jabouin")
-                    .multilineTextAlignment(.center)
-                    .padding()
-                    .foregroundColor(.gray)
             }
             .navigationTitle("Settings")
             .navigationBarTitleDisplayMode(.large)
             .onAppear() {
                 userVM.retrieveUser()
             }
-            .onDisappear {
-                userVM.saveChanges()
-            }
+        
     }
     
 }

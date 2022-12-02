@@ -13,7 +13,7 @@ struct NewsTabView: View {
     @State var searchText = ""
     
     var body: some View {
-    
+                
         NavigationView{
             ArticleListView(articles: articles)
                 .overlay(overlawView)
