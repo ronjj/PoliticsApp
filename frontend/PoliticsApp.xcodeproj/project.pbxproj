@@ -14,6 +14,7 @@
 		544C7F35293447C800598853 /* news.json in Resources */ = {isa = PBXBuildFile; fileRef = 544C7F34293447C800598853 /* news.json */; };
 		544C7F46293448CC00598853 /* ArticleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C7F3F293448CC00598853 /* ArticleListView.swift */; };
 		544C7F47293448CC00598853 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C7F40293448CC00598853 /* NewsView.swift */; };
+		544C7F48293448CC00598853 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C7F41293448CC00598853 /* CategoriesView.swift */; };
 		544C7F49293448CC00598853 /* EmptyPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C7F42293448CC00598853 /* EmptyPlaceholderView.swift */; };
 		544C7F4A293448CC00598853 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C7F43293448CC00598853 /* SafariView.swift */; };
 		544C7F4B293448CC00598853 /* NewsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C7F44293448CC00598853 /* NewsRowView.swift */; };
@@ -29,8 +30,6 @@
 		549CD309293253CB00B9BB7A /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549CD308293253CB00B9BB7A /* AlertItem.swift */; };
 		549CD30B29325FE000B9BB7A /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549CD30A29325FE000B9BB7A /* UserViewModel.swift */; };
 		549CD30F2932647C00B9BB7A /* uszipsjson.json in Resources */ = {isa = PBXBuildFile; fileRef = 549CD30E2932647C00B9BB7A /* uszipsjson.json */; };
-		54A721EB2939A70E00D3CBB7 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A721EA2939A70E00D3CBB7 /* OnboardingView.swift */; };
-		54A721ED2939AB8D00D3CBB7 /* ReusableCategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A721EC2939AB8D00D3CBB7 /* ReusableCategoryButton.swift */; };
 		9F13B8DB292AF96300B5B01A /* YourAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F13B8DA292AF96300B5B01A /* YourAreaView.swift */; };
 		9F6947E7292DF2D900CD190B /* PoliticianRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6947E6292DF2D900CD190B /* PoliticianRowView.swift */; };
 		9FE17A88292F4CDE0008D7EE /* ZipcodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE17A87292F4CDE0008D7EE /* ZipcodeView.swift */; };
@@ -47,6 +46,7 @@
 		544C7F34293447C800598853 /* news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = news.json; sourceTree = "<group>"; };
 		544C7F3F293448CC00598853 /* ArticleListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListView.swift; sourceTree = "<group>"; };
 		544C7F40293448CC00598853 /* NewsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		544C7F41293448CC00598853 /* CategoriesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
 		544C7F42293448CC00598853 /* EmptyPlaceholderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyPlaceholderView.swift; sourceTree = "<group>"; };
 		544C7F43293448CC00598853 /* SafariView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		544C7F44293448CC00598853 /* NewsRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsRowView.swift; sourceTree = "<group>"; };
@@ -62,8 +62,6 @@
 		549CD308293253CB00B9BB7A /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
 		549CD30A29325FE000B9BB7A /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		549CD30E2932647C00B9BB7A /* uszipsjson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = uszipsjson.json; sourceTree = "<group>"; };
-		54A721EA2939A70E00D3CBB7 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
-		54A721EC2939AB8D00D3CBB7 /* ReusableCategoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCategoryButton.swift; sourceTree = "<group>"; };
 		9F13B8DA292AF96300B5B01A /* YourAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourAreaView.swift; sourceTree = "<group>"; };
 		9F6947E6292DF2D900CD190B /* PoliticianRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticianRowView.swift; sourceTree = "<group>"; };
 		9FE17A87292F4CDE0008D7EE /* ZipcodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipcodeView.swift; sourceTree = "<group>"; };
@@ -106,7 +104,6 @@
 				543CC7D22927C3AF006344F7 /* News */,
 				543CC7C22927C011006344F7 /* PoliticsAppApp.swift */,
 				5475BE35292F0E070009EB0D /* ContentView.swift */,
-				54A721EA2939A70E00D3CBB7 /* OnboardingView.swift */,
 				5475BE31292F04100009EB0D /* replace1.swift */,
 				543CC7C62927C011006344F7 /* Assets.xcassets */,
 				543CC7C82927C011006344F7 /* Preview Content */,
@@ -165,13 +162,13 @@
 		544C7F3E293448C300598853 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				544C7F41293448CC00598853 /* CategoriesView.swift */,
 				544C7F42293448CC00598853 /* EmptyPlaceholderView.swift */,
 				544C7F3F293448CC00598853 /* ArticleListView.swift */,
 				544C7F44293448CC00598853 /* NewsRowView.swift */,
 				544C7F40293448CC00598853 /* NewsView.swift */,
 				544C7F45293448CC00598853 /* RetryView.swift */,
 				544C7F43293448CC00598853 /* SafariView.swift */,
-				54A721EC2939AB8D00D3CBB7 /* ReusableCategoryButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -262,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				544C7F48293448CC00598853 /* CategoriesView.swift in Sources */,
 				549CD309293253CB00B9BB7A /* AlertItem.swift in Sources */,
 				5475BE36292F0E070009EB0D /* ContentView.swift in Sources */,
 				544C7F4C293448CC00598853 /* RetryView.swift in Sources */,
@@ -279,8 +277,6 @@
 				543CC7C32927C011006344F7 /* PoliticsAppApp.swift in Sources */,
 				544C7F56293448D900598853 /* Categories.swift in Sources */,
 				9F13B8DB292AF96300B5B01A /* YourAreaView.swift in Sources */,
-				54A721ED2939AB8D00D3CBB7 /* ReusableCategoryButton.swift in Sources */,
-				54A721EB2939A70E00D3CBB7 /* OnboardingView.swift in Sources */,
 				544C7F4B293448CC00598853 /* NewsRowView.swift in Sources */,
 				549CD30B29325FE000B9BB7A /* UserViewModel.swift in Sources */,
 				544C7F55293448D900598853 /* Article.swift in Sources */,
