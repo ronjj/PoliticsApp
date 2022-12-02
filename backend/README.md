@@ -7,7 +7,7 @@ API calls:
 
 
 
-The first three endpoints inside the *** are for testing and help with implementation into the application (They will be removed from the final version - submission)
+The first three endpoints inside the lines are for testing and help with implementation into the application (They will be removed from the final version - submission)
 ***
 
 GET - All users:[
