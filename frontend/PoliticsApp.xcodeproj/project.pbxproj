@@ -28,10 +28,14 @@
 		549CD3072932416B00B9BB7A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549CD3062932416B00B9BB7A /* User.swift */; };
 		549CD309293253CB00B9BB7A /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549CD308293253CB00B9BB7A /* AlertItem.swift */; };
 		549CD30B29325FE000B9BB7A /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549CD30A29325FE000B9BB7A /* UserViewModel.swift */; };
+<<<<<<< HEAD
 		549CD30F2932647C00B9BB7A /* uszipsjson.json in Resources */ = {isa = PBXBuildFile; fileRef = 549CD30E2932647C00B9BB7A /* uszipsjson.json */; };
 		54A721EB2939A70E00D3CBB7 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A721EA2939A70E00D3CBB7 /* OnboardingView.swift */; };
 		54A721ED2939AB8D00D3CBB7 /* ReusableCategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A721EC2939AB8D00D3CBB7 /* ReusableCategoryButton.swift */; };
+=======
+>>>>>>> 74d34b5cc330f1c1c94ed7b9391af904931ca9f6
 		9F13B8DB292AF96300B5B01A /* YourAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F13B8DA292AF96300B5B01A /* YourAreaView.swift */; };
+		9F27431B293A5EBD00BA0668 /* YourAreaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F27431A293A5EBD00BA0668 /* YourAreaAPI.swift */; };
 		9F6947E7292DF2D900CD190B /* PoliticianRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6947E6292DF2D900CD190B /* PoliticianRowView.swift */; };
 		9FE17A88292F4CDE0008D7EE /* ZipcodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE17A87292F4CDE0008D7EE /* ZipcodeView.swift */; };
 		9FE17A8A292FEDF10008D7EE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE17A89292FEDF10008D7EE /* SettingsView.swift */; };
@@ -61,10 +65,14 @@
 		549CD3062932416B00B9BB7A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		549CD308293253CB00B9BB7A /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
 		549CD30A29325FE000B9BB7A /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		549CD30E2932647C00B9BB7A /* uszipsjson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = uszipsjson.json; sourceTree = "<group>"; };
 		54A721EA2939A70E00D3CBB7 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		54A721EC2939AB8D00D3CBB7 /* ReusableCategoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCategoryButton.swift; sourceTree = "<group>"; };
+=======
+>>>>>>> 74d34b5cc330f1c1c94ed7b9391af904931ca9f6
 		9F13B8DA292AF96300B5B01A /* YourAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourAreaView.swift; sourceTree = "<group>"; };
+		9F27431A293A5EBD00BA0668 /* YourAreaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourAreaAPI.swift; sourceTree = "<group>"; };
 		9F6947E6292DF2D900CD190B /* PoliticianRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticianRowView.swift; sourceTree = "<group>"; };
 		9FE17A87292F4CDE0008D7EE /* ZipcodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipcodeView.swift; sourceTree = "<group>"; };
 		9FE17A89292FEDF10008D7EE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -137,7 +145,6 @@
 			children = (
 				543CC7DB2927CD51006344F7 /* Colors + Ext.swift */,
 				544C7F34293447C800598853 /* news.json */,
-				549CD30E2932647C00B9BB7A /* uszipsjson.json */,
 				549CD308293253CB00B9BB7A /* AlertItem.swift */,
 			);
 			path = Utilities;
@@ -186,6 +193,7 @@
 				9FE17A8B2931C74A0008D7EE /* WrappedYourAreaView.swift */,
 				549CD3062932416B00B9BB7A /* User.swift */,
 				549CD30A29325FE000B9BB7A /* UserViewModel.swift */,
+				9F27431A293A5EBD00BA0668 /* YourAreaAPI.swift */,
 			);
 			path = YourArea;
 			sourceTree = "<group>";
@@ -251,7 +259,6 @@
 				543CC7CA2927C011006344F7 /* Preview Assets.xcassets in Resources */,
 				543CC7C72927C011006344F7 /* Assets.xcassets in Resources */,
 				544C7F35293447C800598853 /* news.json in Resources */,
-				549CD30F2932647C00B9BB7A /* uszipsjson.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +282,7 @@
 				544C7F4A293448CC00598853 /* SafariView.swift in Sources */,
 				9FE17A8C2931C74A0008D7EE /* WrappedYourAreaView.swift in Sources */,
 				9F6947E7292DF2D900CD190B /* PoliticianRowView.swift in Sources */,
+				9F27431B293A5EBD00BA0668 /* YourAreaAPI.swift in Sources */,
 				544C7F4E293448D400598853 /* ArticleNewsViewModel.swift in Sources */,
 				543CC7C32927C011006344F7 /* PoliticsAppApp.swift in Sources */,
 				544C7F56293448D900598853 /* Categories.swift in Sources */,
