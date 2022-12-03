@@ -13,7 +13,7 @@ struct ContentView: View {
 
     var body: some View {
         TabView{
-            replace1()
+            MapView()
                 .tabItem{
                     Image(systemName: "house")
                     Text("Home")

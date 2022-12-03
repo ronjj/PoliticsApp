@@ -85,6 +85,11 @@ For user id 3:
     "password": "the password"
 }
 ]
+***
+GET - 
+(35.188.171.193/api/user/all/)
+Does the same as get user represenatives, but returns all things conencted to a user
+
 
 
 

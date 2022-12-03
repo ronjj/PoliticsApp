@@ -21,6 +21,7 @@ struct Representatives: Hashable, Codable {
 class ViewModel: ObservableObject {
     
     @Published var representatives: [Representatives] = []
+    @Published var passed: Bool = false
     
     func fetch(zip : String) async {
         guard let url = URL(string: "http://35.188.171.193/api/locations/\(zip)/") else {
@@ -32,8 +33,10 @@ class ViewModel: ObservableObject {
             
             if let decodedResponse = try? JSONDecoder().decode([Representatives].self, from: data) {
                 representatives = decodedResponse
+                passed = true
             }
         } catch {
+            passed = false
             print("something went wrong")
         }
     }

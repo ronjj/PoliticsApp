@@ -15,7 +15,7 @@ struct User: Codable {
     // TODO: change this to a dictionary?
     var pushNotifs: Bool = false
     var emailNotifs: Bool = false
-    var darkMode: Bool = false
+    var darkMode: Bool = true
 }
 
 extension String  {
