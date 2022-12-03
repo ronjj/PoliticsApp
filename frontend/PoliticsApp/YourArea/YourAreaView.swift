@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct YourAreaView: View {
-
     
     var body: some View {
         NavigationView{
