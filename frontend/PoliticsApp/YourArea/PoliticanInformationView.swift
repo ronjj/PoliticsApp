@@ -13,9 +13,22 @@ struct PoliticanInformationView: View {
     
     var body: some View {
         NavigationView{
-            VStack {
-                Text(rep.name)
+            
+            HStack{
+                VStack{
+                    Circle()
+                        .frame(width: 75, height: 75)
+                    Text(rep.title)
+                }
                 
+                VStack{
+                    Text(rep.name)
+                        .font(.headline)
+                    Text("Represents: \(rep.state)")
+                        .font(.subheadline)
+                    Text(rep.party)
+                        .foregroundColor(rep.party == "Democrat" ?  .blue : .red)
+                }
             }
         }
     }
