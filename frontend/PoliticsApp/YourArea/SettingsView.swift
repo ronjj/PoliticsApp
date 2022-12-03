@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct SettingsView: View {
-    
     @State private var presentAlert = false
-    
     @ObservedObject var userVM = UserVM()
     var body: some View {
             VStack{
@@ -55,5 +53,4 @@ struct SettingsView: View {
                 userVM.retrieveUser()
             }
     }
-    
 }

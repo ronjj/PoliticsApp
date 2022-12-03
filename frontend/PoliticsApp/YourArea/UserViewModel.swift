@@ -18,12 +18,10 @@ final class UserVM: ObservableObject {
     }
     
     var isValidForm: Bool {
-        
         guard isValidZip else{
             alertItem = AlertContext.invalidZip
             return false
         }
-        
         return true
     }
         

@@ -14,7 +14,6 @@ struct YourAreaView: View {
     
     var body: some View {
         NavigationView{
-//            ScrollView{
                 VStack {
                     PoliticianRowView(polType: "House", politicians: ["Pol 1"])
                     PoliticianRowView(polType: "Senate", politicians: ["Pol 1", "Pol 2"])
@@ -26,10 +25,8 @@ struct YourAreaView: View {
                     }
                     ArticleListView(articles: articles)
                         .overlay(overlayView)
-                    //whenever the selected category chnages, the data is reloaded
                         .task(id: articlesNewsVM.fetchTaskToken, loadTask)
                         .refreshable(action: refreshTask)
-//                }
             }
             .navigationTitle("Your Area")
             .navigationBarTitleDisplayMode(.large)
