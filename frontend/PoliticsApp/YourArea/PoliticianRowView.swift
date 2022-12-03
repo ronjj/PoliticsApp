@@ -9,15 +9,22 @@ import SwiftUI
 
 struct PoliticianRowView: View {
     var polType: String
+    var politicians: [String]
     
     var body: some View {
-        HStack{
-            Spacer()
-            Text("\(polType)")
-            Spacer()
-            Circle()
-                .frame(width: 20,height: 20)
-            Spacer()
+        HStack(alignment: .top) {
+            Text("\(polType):")
+            VStack{
+                ForEach(politicians, id: \.self) { politician in
+                    HStack {
+                        Text(politician)
+                        Spacer()
+                        Circle()
+                            .frame(width: 20,height: 20)
+                    }
+                }
+            }
         }
+        .frame(maxWidth: UIScreen.main.bounds.size.width - 100)
     }
 }

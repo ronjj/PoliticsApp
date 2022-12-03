@@ -11,6 +11,11 @@ struct User: Codable {
     var name: String = ""
     var zipCode: String = ""
     var zipCodeEntered: Bool = false
+    
+    // TODO: change this to a dictionary?
+    var pushNotifs: Bool = false
+    var emailNotifs: Bool = false
+    var darkMode: Bool = false
 }
 
 extension String  {
