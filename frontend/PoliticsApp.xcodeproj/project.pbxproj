@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		541F465A293B0A45009A9DF2 /* InteractiveMap in Frameworks */ = {isa = PBXBuildFile; productRef = 541F4659293B0A45009A9DF2 /* InteractiveMap */; };
 		542389CF293AEB630086E359 /* PoliticanInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542389CE293AEB630086E359 /* PoliticanInformationView.swift */; };
 		542389D1293AF4F00086E359 /* LinkedFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542389D0293AF4F00086E359 /* LinkedFile.swift */; };
 		543CC7C32927C011006344F7 /* PoliticsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543CC7C22927C011006344F7 /* PoliticsAppApp.swift */; };
@@ -78,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				541F465A293B0A45009A9DF2 /* InteractiveMap in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +211,9 @@
 			dependencies = (
 			);
 			name = PoliticsApp;
+			packageProductDependencies = (
+				541F4659293B0A45009A9DF2 /* InteractiveMap */,
+			);
 			productName = PoliticsApp;
 			productReference = 543CC7BF2927C011006344F7 /* PoliticsApp.app */;
 			productType = "com.apple.product-type.application";
@@ -237,6 +242,9 @@
 				Base,
 			);
 			mainGroup = 543CC7B62927C011006344F7;
+			packageReferences = (
+				541F4658293B0A45009A9DF2 /* XCRemoteSwiftPackageReference "InteractiveMap" */,
+			);
 			productRefGroup = 543CC7C02927C011006344F7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -491,6 +499,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		541F4658293B0A45009A9DF2 /* XCRemoteSwiftPackageReference "InteractiveMap" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GrandSir/InteractiveMap";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		541F4659293B0A45009A9DF2 /* InteractiveMap */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 541F4658293B0A45009A9DF2 /* XCRemoteSwiftPackageReference "InteractiveMap" */;
+			productName = InteractiveMap;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 543CC7B72927C011006344F7 /* Project object */;
 }
