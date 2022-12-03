@@ -16,12 +16,17 @@ struct PoliticianRowView: View {
             Text("\(polType):")
                 .bold()
             VStack{
-                ForEach(politicians, id: \.self) { politician in
-                    HStack {
-                        Text(politician.name)
-                        Spacer()
-                        Circle()
-                            .frame(width: 20,height: 20)
+                if (politicians.count == 0) {
+                    Text("None found for your area.")
+                }
+                else {
+                    ForEach(politicians, id: \.self) { politician in
+                        HStack {
+                            Text(politician.name)
+                            Spacer()
+                            Circle()
+                                .frame(width: 20,height: 20)
+                        }
                     }
                 }
             }
