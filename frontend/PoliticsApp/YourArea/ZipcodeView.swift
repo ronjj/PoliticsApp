@@ -20,7 +20,6 @@ struct ZipcodeView: View {
                         .keyboardType(.numberPad)
                     Button {
                         userVM.saveChanges()
-                        print(userVM.user.zipCode)
                     } label: {
                         Text("Submit")
                     }

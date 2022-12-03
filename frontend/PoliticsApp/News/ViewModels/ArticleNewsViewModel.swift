@@ -58,7 +58,6 @@ class ArticleNewsViewModel: ObservableObject {
             phase = .success(articles)
         } catch {
             if Task.isCancelled { return }
-            print(error.localizedDescription)
             phase = .failure(error)
         }
     }
