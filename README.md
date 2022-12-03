@@ -9,6 +9,7 @@ We plan on designing, implementing, and publishing a political news IOS applicat
 
 Addressing the Requirements:
 Our project addresses 
+
 Backend:
 
 IOS:
@@ -16,3 +17,4 @@ IOS:
 DESIGN:
 
 
+Extra Information:
