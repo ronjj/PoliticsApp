@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct SettingsView: View {
     
@@ -13,6 +14,8 @@ struct SettingsView: View {
     
     @ObservedObject var userVM = UserVM()
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @Environment(\.colorScheme) var colorScheme
+
     
     var body: some View {
             VStack{
@@ -41,6 +44,13 @@ struct SettingsView: View {
                     Toggle("Dark mode", isOn: $userVM.user.darkMode)
                     Toggle("Push notifications", isOn: $userVM.user.pushNotifs)
                     Toggle("Email notifications", isOn: $userVM.user.emailNotifs)
+                    Button {
+                        userVM.saveChanges()
+                        self.presentationMode.wrappedValue.dismiss()
+                    } label: {
+                        Text("Save Changes")
+                    }
+                    .buttonStyle(.bordered)
                 }
                 .frame(maxWidth: UIScreen.main.bounds.size.width - 40)
                 Spacer()
@@ -51,14 +61,7 @@ struct SettingsView: View {
             }
             .navigationTitle("Settings")
             .navigationBarTitleDisplayMode(.large)
-            .toolbar {
-                Button {
-                    userVM.saveChanges()
-                    self.presentationMode.wrappedValue.dismiss()
-                } label: {
-                    Text("Save Changes")
-                }
-            }
+
             .onAppear() {
                 userVM.retrieveUser()
                 print(userVM.user)
