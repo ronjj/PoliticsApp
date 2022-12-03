@@ -26,6 +26,14 @@ struct ZipcodeView: View {
                                 await userApiVM.login(name: userVM.user.name, password: password)
                                 userVM.user.sessionToken = userApiVM.userLoginResponse?.session_token ?? ""
                                 userVM.errorMessage = userApiVM.errorResponse
+                                
+                                if (userVM.errorMessage == "") {
+                                    await userApiVM.fetchUser(token: userVM.user.sessionToken)
+                                    userVM.user.zipCode = userApiVM.userResponse?.location.zipCode ?? ""
+                                    userVM.errorMessage = userApiVM.errorResponse
+                                }
+                                
+                                print(userVM.user)
                                 userVM.saveChanges()
                             }
                         } label: {

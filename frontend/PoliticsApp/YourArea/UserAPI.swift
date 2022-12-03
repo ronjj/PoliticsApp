@@ -50,6 +50,42 @@ class UserAPI: ObservableObject {
     @Published var userLoginResponse: UserLoginResponse?
     @Published var errorResponse: String = ""
     
+    func fetchUser(token: String) async {
+        guard let url = URL(string: "http://35.188.171.193/api/user/all/") else {
+            return
+        }
+        
+        do {
+            var request = URLRequest(url: url)
+//            request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+            request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+            print(request.allHTTPHeaderFields)
+            
+            guard let encoded = try? JSONEncoder().encode(UserLoginInput(name: "", password: "")) else {
+                print("Failed to encode user")
+                return
+            }
+
+            request.httpMethod = "POST"
+            
+            let (data, _) = try await URLSession.shared.upload(for: request, from: encoded)
+            if let decodedResponse = try? JSONDecoder().decode(UserResponse.self, from: data) {
+                errorResponse = ""
+                userResponse = decodedResponse
+            } else {
+                print(data)
+                if let decodedResponse = try? JSONDecoder().decode(ErrorResponse.self, from: data) {
+                    errorResponse = decodedResponse.error
+                } else {
+                    errorResponse = "Something went wrong"
+                }
+                print("Failed to decode response")
+            }
+        } catch {
+            print("Something went wrong")
+        }
+    }
+    
     func login(name: String, password: String) async {
         guard let url = URL(string: "http://35.188.171.193/api/login/") else {
             return
