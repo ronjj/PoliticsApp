@@ -20,10 +20,6 @@
 		FD5C8EA3292AFCE200CA1A8F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5C8EA2292AFCE200CA1A8F /* MapView.swift */; };
 		FD5C8EA6292AFEE300CA1A8F /* InteractiveMap in Frameworks */ = {isa = PBXBuildFile; productRef = FD5C8EA5292AFEE300CA1A8F /* InteractiveMap */; };
 		FD5C8EA8292B1D1000CA1A8F /* usa-low.svg in Resources */ = {isa = PBXBuildFile; fileRef = FD5C8EA7292B1D1000CA1A8F /* usa-low.svg */; };
-		FD749662293418BA00BB0982 /* us.svg in Resources */ = {isa = PBXBuildFile; fileRef = FD749661293418BA00BB0982 /* us.svg */; };
-		FD749666293AD6D900BB0982 /* us2.svg in Resources */ = {isa = PBXBuildFile; fileRef = FD749665293AD6D900BB0982 /* us2.svg */; };
-		FD749668293AD7E800BB0982 /* us3.svg in Resources */ = {isa = PBXBuildFile; fileRef = FD749667293AD7E800BB0982 /* us3.svg */; };
-		FD74966A293AE9A500BB0982 /* alabama.svg in Resources */ = {isa = PBXBuildFile; fileRef = FD749669293AE9A500BB0982 /* alabama.svg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,10 +36,6 @@
 		543CC7DD2927CDF5006344F7 /* NewsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailView.swift; sourceTree = "<group>"; };
 		FD5C8EA2292AFCE200CA1A8F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		FD5C8EA7292B1D1000CA1A8F /* usa-low.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "usa-low.svg"; sourceTree = "<group>"; };
-		FD749661293418BA00BB0982 /* us.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = us.svg; sourceTree = "<group>"; };
-		FD749665293AD6D900BB0982 /* us2.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = us2.svg; sourceTree = "<group>"; };
-		FD749667293AD7E800BB0982 /* us3.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = us3.svg; sourceTree = "<group>"; };
-		FD749669293AE9A500BB0982 /* alabama.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = alabama.svg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,10 +113,6 @@
 			children = (
 				FD5C8EA2292AFCE200CA1A8F /* MapView.swift */,
 				FD5C8EA7292B1D1000CA1A8F /* usa-low.svg */,
-				FD749661293418BA00BB0982 /* us.svg */,
-				FD749665293AD6D900BB0982 /* us2.svg */,
-				FD749667293AD7E800BB0982 /* us3.svg */,
-				FD749669293AE9A500BB0982 /* alabama.svg */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -193,11 +181,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD749662293418BA00BB0982 /* us.svg in Resources */,
-				FD749666293AD6D900BB0982 /* us2.svg in Resources */,
 				FD5C8EA8292B1D1000CA1A8F /* usa-low.svg in Resources */,
-				FD74966A293AE9A500BB0982 /* alabama.svg in Resources */,
-				FD749668293AD7E800BB0982 /* us3.svg in Resources */,
 				543CC7CA2927C011006344F7 /* Preview Assets.xcassets in Resources */,
 				543CC7C72927C011006344F7 /* Assets.xcassets in Resources */,
 			);
