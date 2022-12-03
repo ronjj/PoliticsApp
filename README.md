@@ -1,4 +1,4 @@
-AppName:
+AppName:PloyBytes
 
 Made for the Fall 2022 Hack Challenge.
 
@@ -11,6 +11,7 @@ Addressing the Requirements:
 Our project addresses 
 
 Backend:
+We implemented many endpoints including 
 
 IOS:
 
