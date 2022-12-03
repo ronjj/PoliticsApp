@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		542389CF293AEB630086E359 /* PoliticanInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542389CE293AEB630086E359 /* PoliticanInformationView.swift */; };
 		543CC7C32927C011006344F7 /* PoliticsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543CC7C22927C011006344F7 /* PoliticsAppApp.swift */; };
 		543CC7C72927C011006344F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 543CC7C62927C011006344F7 /* Assets.xcassets */; };
 		543CC7CA2927C011006344F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 543CC7C92927C011006344F7 /* Preview Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		542389CE293AEB630086E359 /* PoliticanInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticanInformationView.swift; sourceTree = "<group>"; };
 		543CC7BF2927C011006344F7 /* PoliticsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoliticsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		543CC7C22927C011006344F7 /* PoliticsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticsAppApp.swift; sourceTree = "<group>"; };
 		543CC7C62927C011006344F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				9FE17A8B2931C74A0008D7EE /* WrappedYourAreaView.swift */,
 				549CD3062932416B00B9BB7A /* User.swift */,
 				549CD30A29325FE000B9BB7A /* UserViewModel.swift */,
+				542389CE293AEB630086E359 /* PoliticanInformationView.swift */,
 			);
 			path = YourArea;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				9F6947E7292DF2D900CD190B /* PoliticianRowView.swift in Sources */,
 				544C7F4E293448D400598853 /* ArticleNewsViewModel.swift in Sources */,
 				543CC7C32927C011006344F7 /* PoliticsAppApp.swift in Sources */,
+				542389CF293AEB630086E359 /* PoliticanInformationView.swift in Sources */,
 				544C7F56293448D900598853 /* Categories.swift in Sources */,
 				9F13B8DB292AF96300B5B01A /* YourAreaView.swift in Sources */,
 				544C7F4B293448CC00598853 /* NewsRowView.swift in Sources */,
