@@ -12,6 +12,8 @@ struct SettingsView: View {
     @State private var presentAlert = false
     
     @ObservedObject var userVM = UserVM()
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     var body: some View {
             VStack{
                 HStack{
@@ -25,11 +27,9 @@ struct SettingsView: View {
                         Image(systemName: "pencil")
                     }
                     .alert("Edit Zip Code", isPresented: $presentAlert, actions: {
-                        TextField("Username", text: $userVM.user.zipCode)
+                        TextField("Zip Code", text: $userVM.user.zipCode)
                             .keyboardType(.numberPad)
-                        Button("Confirm", action: {
-                            userVM.saveChanges()
-                        })
+                        Button("Confirm", action: {})
                         Button("Cancel", role: .cancel, action: {})
                     }, message: {
                         Text("Please enter your zip code.")
@@ -51,6 +51,14 @@ struct SettingsView: View {
             }
             .navigationTitle("Settings")
             .navigationBarTitleDisplayMode(.large)
+            .toolbar {
+                Button {
+                    userVM.saveChanges()
+                    self.presentationMode.wrappedValue.dismiss()
+                } label: {
+                    Text("Save Changes")
+                }
+            }
             .onAppear() {
                 userVM.retrieveUser()
             }

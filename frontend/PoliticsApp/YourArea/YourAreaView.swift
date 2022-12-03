@@ -15,7 +15,7 @@ struct YourAreaView: View {
     @ObservedObject var userVM = UserVM()
     
     var body: some View {
-        NavigationView{
+        NavigationView {
                 VStack {
                     PoliticianRowView(polType: "House", politicians: viewModel.representatives.filter({ $0.title != "Senator"}))
                     PoliticianRowView(polType: "Senate", politicians: viewModel.representatives.filter({ $0.title != "House" }))

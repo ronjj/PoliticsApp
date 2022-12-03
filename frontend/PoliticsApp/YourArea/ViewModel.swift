@@ -27,7 +27,6 @@ class ViewModel: ObservableObject {
             return
         }
         
-        
         do {
             let (data, _) = try await URLSession.shared.data(from: url)
             
