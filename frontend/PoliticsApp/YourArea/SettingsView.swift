@@ -54,9 +54,6 @@ struct SettingsView: View {
             .onAppear() {
                 userVM.retrieveUser()
             }
-            .onDisappear {
-                userVM.saveChanges()
-            }
     }
     
 }
