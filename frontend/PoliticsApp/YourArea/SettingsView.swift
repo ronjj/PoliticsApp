@@ -8,18 +8,12 @@
 import SwiftUI
 
 struct SettingsView: View {
+    
     @ObservedObject var userVM = UserVM()
     var body: some View {
-            VStack{
-                Text("Your zip code is \(userVM.user.zipCode).")
-                Spacer()
-            }
-            .navigationTitle("Settings")
-            .navigationBarTitleDisplayMode(.large)
-            .onAppear() {
-                userVM.retrieveUser()
-            }
-        
+        VStack{
+            Text("Your zip code is \(userVM.user.zipCode).")
+        }
     }
     
 }
