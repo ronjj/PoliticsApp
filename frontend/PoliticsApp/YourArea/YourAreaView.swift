@@ -12,7 +12,6 @@ struct YourAreaView: View {
     
     var body: some View {
         NavigationView{
-            ScrollView{
                 VStack {
                     PoliticianRowView(polType: "House")
                     PoliticianRowView(polType: "Senate")
@@ -22,8 +21,10 @@ struct YourAreaView: View {
                             .padding()
                         Spacer()
                     }
-                   // ArticleListView(articles: vm.articles )
-                }
+                    ArticleListView(articles: articles)
+                        .overlay(overlayView)
+                        .task(id: articlesNewsVM.fetchTaskToken, loadTask)
+                        .refreshable(action: refreshTask)
             }
             .navigationTitle("Your Area")
             .navigationBarTitleDisplayMode(.large)

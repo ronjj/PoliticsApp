@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PoliticianRowView: View {
     var polType: String
+    var politicians: [String]
     
     var body: some View {
         HStack{
