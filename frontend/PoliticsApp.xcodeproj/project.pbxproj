@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		542389CF293AEB630086E359 /* PoliticanInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542389CE293AEB630086E359 /* PoliticanInformationView.swift */; };
+		542389D1293AF4F00086E359 /* LinkedFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542389D0293AF4F00086E359 /* LinkedFile.swift */; };
 		543CC7C32927C011006344F7 /* PoliticsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543CC7C22927C011006344F7 /* PoliticsAppApp.swift */; };
 		543CC7C72927C011006344F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 543CC7C62927C011006344F7 /* Assets.xcassets */; };
 		543CC7CA2927C011006344F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 543CC7C92927C011006344F7 /* Preview Assets.xcassets */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		542389CE293AEB630086E359 /* PoliticanInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticanInformationView.swift; sourceTree = "<group>"; };
+		542389D0293AF4F00086E359 /* LinkedFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedFile.swift; sourceTree = "<group>"; };
 		543CC7BF2927C011006344F7 /* PoliticsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoliticsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		543CC7C22927C011006344F7 /* PoliticsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticsAppApp.swift; sourceTree = "<group>"; };
 		543CC7C62927C011006344F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				549CD3062932416B00B9BB7A /* User.swift */,
 				549CD30A29325FE000B9BB7A /* UserViewModel.swift */,
 				542389CE293AEB630086E359 /* PoliticanInformationView.swift */,
+				542389D0293AF4F00086E359 /* LinkedFile.swift */,
 			);
 			path = YourArea;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			files = (
 				544C7F48293448CC00598853 /* CategoriesView.swift in Sources */,
 				549CD309293253CB00B9BB7A /* AlertItem.swift in Sources */,
+				542389D1293AF4F00086E359 /* LinkedFile.swift in Sources */,
 				5475BE36292F0E070009EB0D /* ContentView.swift in Sources */,
 				544C7F4C293448CC00598853 /* RetryView.swift in Sources */,
 				544C7F47293448CC00598853 /* NewsView.swift in Sources */,

@@ -31,7 +31,7 @@ struct PoliticanInformationView: View {
                 }
             }
             
-            Text("Learn More \(rep.website)")
+            LinkedText("Learn More \(rep.website)")
                 .padding(.top, 10)
             Spacer()
         }
