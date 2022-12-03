@@ -19,12 +19,6 @@ final class UserVM: ObservableObject {
     }
     
     var isValidForm: Bool {
-        //Check if field is empty
-        guard !user.zipCode.isEmpty else {
-            alertItem = AlertContext.invalidForm
-            return false
-        }
-        
         guard isValidZip else{
             alertItem = AlertContext.invalidZip
             return false
@@ -35,7 +29,7 @@ final class UserVM: ObservableObject {
         
     func saveChanges() {
         guard isValidForm else { return }
-        
+
         do {
             let data = try JSONEncoder().encode(user)
             userData = data

@@ -25,7 +25,7 @@ struct SettingsView: View {
                         Image(systemName: "pencil")
                     }
                     .alert("Edit Zip Code", isPresented: $presentAlert, actions: {
-                        TextField("Username", text: $userVM.user.zipCode)
+                        TextField("Zip Code", text: $userVM.user.zipCode)
                             .keyboardType(.numberPad)
                         Button("Confirm", action: {
                             userVM.saveChanges()
@@ -53,9 +53,6 @@ struct SettingsView: View {
             .navigationBarTitleDisplayMode(.large)
             .onAppear() {
                 userVM.retrieveUser()
-            }
-            .onDisappear {
-                userVM.saveChanges()
             }
     }
     

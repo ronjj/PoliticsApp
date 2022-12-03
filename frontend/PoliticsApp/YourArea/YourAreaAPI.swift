@@ -9,4 +9,10 @@ import Foundation
 
 struct YourAreaAPI {
     
+    private let jsonDecoder: JSONDecoder = {
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .iso8601
+        return decoder
+    }()
+    
 }
