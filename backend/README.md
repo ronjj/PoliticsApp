@@ -7,8 +7,7 @@ API calls:
 
 
 
-The first three endpoints inside the first line segment are for testing and help with implementation into the application (They will be removed from the final version - submission)
-***
+The first three endpoints inside the first line segment are for testing and backend use
 
 GET - All users:[
 (35.188.171.193/api/user/)
