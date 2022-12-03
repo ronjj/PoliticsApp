@@ -43,7 +43,12 @@ class UserAPI: ObservableObject {
             request.setValue("application/json", forHTTPHeaderField: "Content-Type")
             request.httpMethod = "POST"
             
-            let (data, _) = try await URLSession.shared.upload(for: request, from: UserInput(name: name, password: password, location: location))
+            guard let encoded = try? JSONEncoder().encode(UserInput(name: name, password: password, location: location)) else {
+                print("Failed to encode order")
+                return
+            }
+            
+            let (data, _) = try await URLSession.shared.upload(for: request, from: encoded)
             if let decodedResponse = try? JSONDecoder().decode(UserResponse.self, from: data) {
                 userResponse = decodedResponse
             }

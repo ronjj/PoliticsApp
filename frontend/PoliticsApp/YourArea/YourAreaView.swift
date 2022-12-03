@@ -46,6 +46,7 @@ struct YourAreaView: View {
         }
         .onAppear() {
             userVM.retrieveUser()
+            print(userVM.user)
         }
     }
     

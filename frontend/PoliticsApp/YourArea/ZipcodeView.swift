@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ZipcodeView: View {
     @StateObject var userVM = UserVM()
+    @StateObject var userApiVM = UserAPI()
     @State private var password = ""
     
     //TODO: Make screen refreshable and see if that can make the your area screen appear
@@ -21,6 +22,9 @@ struct ZipcodeView: View {
                         TextField("Username", text: $userVM.user.name)
                         SecureField("Password", text: $password)
                         Button {
+                            Task {
+//                                await userApiVM.register(name: $userVM.user.name, password: $password, location: $userVM.user.zipCode)
+                            }
                             userVM.saveChanges()
                         } label: {
                             Text("Submit")
@@ -32,7 +36,11 @@ struct ZipcodeView: View {
                         TextField("Zip Code", text: $userVM.user.zipCode)
                             .keyboardType(.numberPad)
                         Button {
-                            userVM.saveChanges()
+                            Task {
+                                await userApiVM.register(name: userVM.user.name, password: password, location: userVM.user.zipCode)
+                                userVM.user.sessionToken = userApiVM.userResponse?.session_token ?? ""
+                                userVM.saveChanges()
+                            }
                         } label: {
                             Text("Submit")
                         }
