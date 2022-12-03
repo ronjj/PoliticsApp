@@ -21,11 +21,13 @@ struct PoliticianRowView: View {
                 }
                 else {
                     ForEach(politicians, id: \.self) { politician in
-                        HStack {
-                            Text(politician.name)
-                            Spacer()
-                            Circle()
-                                .frame(width: 20,height: 20)
+                        NavigationLink(destination: PoliticanInformationView(rep: politician)){
+                            HStack {
+                                Text(politician.name)
+                                Spacer()
+                                Circle()
+                                    .frame(width: 20,height: 20)
+                            }
                         }
                     }
                 }
