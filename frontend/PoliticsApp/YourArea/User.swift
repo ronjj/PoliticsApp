@@ -11,6 +11,7 @@ struct User: Codable {
     var name: String = ""
     var zipCode: String = ""
     var zipCodeEntered: Bool = false
+    var sessionToken: String = ""
     
     // TODO: change this to a dictionary?
     var pushNotifs: Bool = false

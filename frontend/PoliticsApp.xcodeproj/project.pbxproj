@@ -33,6 +33,7 @@
 		549CD30B29325FE000B9BB7A /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549CD30A29325FE000B9BB7A /* UserViewModel.swift */; };
 		9F13B8DB292AF96300B5B01A /* YourAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F13B8DA292AF96300B5B01A /* YourAreaView.swift */; };
 		9F274320293AE08C00BA0668 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F27431E293AE08C00BA0668 /* ViewModel.swift */; };
+		9F274323293AF96000BA0668 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F274322293AF96000BA0668 /* UserAPI.swift */; };
 		9F6947E7292DF2D900CD190B /* PoliticianRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6947E6292DF2D900CD190B /* PoliticianRowView.swift */; };
 		9FE17A88292F4CDE0008D7EE /* ZipcodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE17A87292F4CDE0008D7EE /* ZipcodeView.swift */; };
 		9FE17A8A292FEDF10008D7EE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE17A89292FEDF10008D7EE /* SettingsView.swift */; };
@@ -67,6 +68,7 @@
 		549CD30A29325FE000B9BB7A /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		9F13B8DA292AF96300B5B01A /* YourAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourAreaView.swift; sourceTree = "<group>"; };
 		9F27431E293AE08C00BA0668 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		9F274322293AF96000BA0668 /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
 		9F6947E6292DF2D900CD190B /* PoliticianRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticianRowView.swift; sourceTree = "<group>"; };
 		9FE17A87292F4CDE0008D7EE /* ZipcodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipcodeView.swift; sourceTree = "<group>"; };
 		9FE17A89292FEDF10008D7EE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				549CD30A29325FE000B9BB7A /* UserViewModel.swift */,
 				542389CE293AEB630086E359 /* PoliticanInformationView.swift */,
 				542389D0293AF4F00086E359 /* LinkedFile.swift */,
+				9F274322293AF96000BA0668 /* UserAPI.swift */,
 			);
 			path = YourArea;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				9FE17A88292F4CDE0008D7EE /* ZipcodeView.swift in Sources */,
 				549CD3072932416B00B9BB7A /* User.swift in Sources */,
 				544C7F53293448D900598853 /* NewsAPI.swift in Sources */,
+				9F274323293AF96000BA0668 /* UserAPI.swift in Sources */,
 				544C7F4A293448CC00598853 /* SafariView.swift in Sources */,
 				9FE17A8C2931C74A0008D7EE /* WrappedYourAreaView.swift in Sources */,
 				9F6947E7292DF2D900CD190B /* PoliticianRowView.swift in Sources */,

@@ -9,23 +9,37 @@ import SwiftUI
 
 struct ZipcodeView: View {
     @StateObject var userVM = UserVM()
+    @State private var password = ""
     
     //TODO: Make screen refreshable and see if that can make the your area screen appear
     
     var body: some View {
         NavigationView{
-            Form{
-                Section(header: Text("Zip Code")) {
-                    TextField("Enter your zip code", text: $userVM.user.zipCode)
-                        .keyboardType(.numberPad)
-                    Button {
-                        userVM.saveChanges()
-                    } label: {
-                        Text("Submit")
+            VStack {
+                Form{
+                    Section(header: Text("Log in")) {
+                        TextField("Username", text: $userVM.user.name)
+                        SecureField("Password", text: $password)
+                        Button {
+                            userVM.saveChanges()
+                        } label: {
+                            Text("Submit")
+                        }
+                    }
+                    Section(header: Text("Sign up")) {
+                        TextField("Username", text: $userVM.user.name)
+                        SecureField("Password", text: $password)
+                        TextField("Zip Code", text: $userVM.user.zipCode)
+                            .keyboardType(.numberPad)
+                        Button {
+                            userVM.saveChanges()
+                        } label: {
+                            Text("Submit")
+                        }
                     }
                 }
             }
-            .navigationTitle("Your Zip Code")
+            .navigationTitle("Log in/Sign up")
         }
         .onAppear{
             userVM.retrieveUser()
