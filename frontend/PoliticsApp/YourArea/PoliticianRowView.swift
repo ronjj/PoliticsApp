@@ -27,7 +27,9 @@ struct PoliticianRowView: View {
                                 Spacer()
                                 Circle()
                                     .frame(width: 20,height: 20)
+                                    .foregroundColor(politician.party == "Democrat" ?  .blue : .red)
                             }
+                            .buttonStyle(.plain)
                         }
                     }
                 }

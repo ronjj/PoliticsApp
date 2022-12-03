@@ -12,14 +12,14 @@ struct PoliticanInformationView: View {
     let rep: Representatives
     
     var body: some View {
-        NavigationView{
-            
+        VStack{
             HStack{
                 VStack{
                     Circle()
                         .frame(width: 75, height: 75)
                     Text(rep.title)
                 }
+                
                 
                 VStack{
                     Text(rep.name)
@@ -30,6 +30,11 @@ struct PoliticanInformationView: View {
                         .foregroundColor(rep.party == "Democrat" ?  .blue : .red)
                 }
             }
+            
+            Text("Learn More \(rep.website)")
+                .padding(.top, 10)
+            Spacer()
         }
+        
     }
 }
