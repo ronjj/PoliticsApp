@@ -12,7 +12,8 @@ final class UserVM: ObservableObject {
     
     @Published var user = User()
     @Published var alertItem: AlertItem?
-    
+    @Published var errorMessage = ""
+        
     // TODO: Find a database of zip codes for verification
     var isValidZip: Bool {
         return (user.zipCode.count == 5 || user.zipCode.count == 4) && user.zipCode.isNumber
@@ -20,8 +21,15 @@ final class UserVM: ObservableObject {
     
     var isValidForm: Bool {
         //Check if field is empty
-        guard isValidZip else{
-            alertItem = AlertContext.invalidZip
+//        guard isValidZip else {
+//            alertItem = AlertContext.invalidZip
+//            return false
+//        }
+        
+        guard user.name != "" && errorMessage == "" else {
+            alertItem = AlertItem(title: Text("Error"),
+                                  message: Text(errorMessage),
+                                  dismissButton: .default(Text("OK")))
             return false
         }
         

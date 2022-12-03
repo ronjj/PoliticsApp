@@ -23,9 +23,11 @@ struct ZipcodeView: View {
                         SecureField("Password", text: $password)
                         Button {
                             Task {
-//                                await userApiVM.register(name: $userVM.user.name, password: $password, location: $userVM.user.zipCode)
+                                await userApiVM.login(name: userVM.user.name, password: password)
+                                userVM.user.sessionToken = userApiVM.userLoginResponse?.session_token ?? ""
+                                userVM.errorMessage = userApiVM.errorResponse
+                                userVM.saveChanges()
                             }
-                            userVM.saveChanges()
                         } label: {
                             Text("Submit")
                         }
@@ -39,6 +41,8 @@ struct ZipcodeView: View {
                             Task {
                                 await userApiVM.register(name: userVM.user.name, password: password, location: userVM.user.zipCode)
                                 userVM.user.sessionToken = userApiVM.userResponse?.session_token ?? ""
+                                userVM.errorMessage = userApiVM.errorResponse
+//                                userVM.
                                 userVM.saveChanges()
                             }
                         } label: {
