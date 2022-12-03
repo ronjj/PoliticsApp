@@ -16,9 +16,9 @@ struct Representatives: Hashable, Codable{
     let office: String
     let title: String
     let state: String
-
-    
 }
+
+
 class ViewModel: ObservableObject {
     
     @Published var representatives: [Representatives] = []
