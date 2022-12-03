@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct PoliticsAppApp: App {
+    
+    @ObservedObject var userVM = UserVM()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onAppear() {
+                    userVM.retrieveUser()
+                }
+                .preferredColorScheme(userVM.user.darkMode ? .dark : .light)
         }
     }
 }
