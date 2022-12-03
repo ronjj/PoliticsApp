@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Representatives: Hashable, Codable{
+struct Representatives: Hashable, Codable {
     let id: Int
     let name: String
     let party: String
@@ -18,21 +18,20 @@ struct Representatives: Hashable, Codable{
     let state: String
 }
 
-
 class ViewModel: ObservableObject {
     
     @Published var representatives: [Representatives] = []
     
-    func fetch() async {
-        guard let url = URL(string: "35.188.171.193/api/locations/11552/") else {
+    func fetch(zip : String) async {
+        guard let url = URL(string: "http://35.188.171.193/api/locations/\(zip)/") else {
             return
         }
+        
         
         do {
             let (data, _) = try await URLSession.shared.data(from: url)
             
             if let decodedResponse = try? JSONDecoder().decode([Representatives].self, from: data) {
-                
                 representatives = decodedResponse
             }
         } catch {

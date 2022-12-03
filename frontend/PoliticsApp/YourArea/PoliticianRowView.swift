@@ -9,15 +9,16 @@ import SwiftUI
 
 struct PoliticianRowView: View {
     var polType: String
-    var politicians: [String]
+    var politicians: [Representatives]
     
     var body: some View {
         HStack(alignment: .top) {
             Text("\(polType):")
+                .bold()
             VStack{
                 ForEach(politicians, id: \.self) { politician in
                     HStack {
-                        Text(politician)
+                        Text(politician.name)
                         Spacer()
                         Circle()
                             .frame(width: 20,height: 20)

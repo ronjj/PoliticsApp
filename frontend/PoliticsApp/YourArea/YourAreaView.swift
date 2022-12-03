@@ -11,13 +11,14 @@ struct YourAreaView: View {
     
     // insert getting articles here
     @StateObject var articlesNewsVM = ArticleNewsViewModel()
+    @StateObject var viewModel = ViewModel()
+    @ObservedObject var userVM = UserVM()
     
     var body: some View {
         NavigationView{
-//            ScrollView{
                 VStack {
-                    PoliticianRowView(polType: "House", politicians: ["Pol 1"])
-                    PoliticianRowView(polType: "Senate", politicians: ["Pol 1", "Pol 2"])
+                    PoliticianRowView(polType: "House", politicians: viewModel.representatives.filter({ $0.title != "Senator"}))
+                    PoliticianRowView(polType: "Senate", politicians: viewModel.representatives.filter({ $0.title != "House" }))
                     HStack{
                         Text("Your News")
                             .font(.largeTitle)
@@ -26,11 +27,12 @@ struct YourAreaView: View {
                     }
                     ArticleListView(articles: articles)
                         .overlay(overlayView)
-                    //whenever the selected category chnages, the data is reloaded
                         .task(id: articlesNewsVM.fetchTaskToken, loadTask)
                         .refreshable(action: refreshTask)
-//                }
             }
+                .task {
+                    await viewModel.fetch(zip: userVM.user.zipCode)
+                }
             .navigationTitle("Your Area")
             .navigationBarTitleDisplayMode(.large)
             .toolbar {
@@ -40,6 +42,10 @@ struct YourAreaView: View {
                     Label("Settings", systemImage: "gearshape")
                 }
             }
+            
+        }
+        .onAppear() {
+            userVM.retrieveUser()
         }
     }
     
