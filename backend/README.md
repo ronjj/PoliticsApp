@@ -85,10 +85,12 @@ For user id 3:
 }
 ]
 ***
-GET - 
+GET - Return user information
 (35.188.171.193/api/user/all/)
 Does the same as get user represenatives, but returns all things conencted to a user
 
-
+DELETE - Delete User
+(/api/delete/user/<int:user_id>/)
+Deletes the user with the specified user_id
 
 
