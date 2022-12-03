@@ -30,7 +30,6 @@
 		549CD309293253CB00B9BB7A /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549CD308293253CB00B9BB7A /* AlertItem.swift */; };
 		549CD30B29325FE000B9BB7A /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549CD30A29325FE000B9BB7A /* UserViewModel.swift */; };
 		9F13B8DB292AF96300B5B01A /* YourAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F13B8DA292AF96300B5B01A /* YourAreaView.swift */; };
-		9F27431B293A5EBD00BA0668 /* YourAreaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F27431A293A5EBD00BA0668 /* YourAreaAPI.swift */; };
 		9F6947E7292DF2D900CD190B /* PoliticianRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6947E6292DF2D900CD190B /* PoliticianRowView.swift */; };
 		9FE17A88292F4CDE0008D7EE /* ZipcodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE17A87292F4CDE0008D7EE /* ZipcodeView.swift */; };
 		9FE17A8A292FEDF10008D7EE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE17A89292FEDF10008D7EE /* SettingsView.swift */; };
@@ -62,7 +61,6 @@
 		549CD308293253CB00B9BB7A /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
 		549CD30A29325FE000B9BB7A /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		9F13B8DA292AF96300B5B01A /* YourAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourAreaView.swift; sourceTree = "<group>"; };
-		9F27431A293A5EBD00BA0668 /* YourAreaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourAreaAPI.swift; sourceTree = "<group>"; };
 		9F6947E6292DF2D900CD190B /* PoliticianRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticianRowView.swift; sourceTree = "<group>"; };
 		9FE17A87292F4CDE0008D7EE /* ZipcodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipcodeView.swift; sourceTree = "<group>"; };
 		9FE17A89292FEDF10008D7EE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -182,7 +180,6 @@
 				9FE17A8B2931C74A0008D7EE /* WrappedYourAreaView.swift */,
 				549CD3062932416B00B9BB7A /* User.swift */,
 				549CD30A29325FE000B9BB7A /* UserViewModel.swift */,
-				9F27431A293A5EBD00BA0668 /* YourAreaAPI.swift */,
 			);
 			path = YourArea;
 			sourceTree = "<group>";
@@ -272,7 +269,6 @@
 				544C7F4A293448CC00598853 /* SafariView.swift in Sources */,
 				9FE17A8C2931C74A0008D7EE /* WrappedYourAreaView.swift in Sources */,
 				9F6947E7292DF2D900CD190B /* PoliticianRowView.swift in Sources */,
-				9F27431B293A5EBD00BA0668 /* YourAreaAPI.swift in Sources */,
 				544C7F4E293448D400598853 /* ArticleNewsViewModel.swift in Sources */,
 				543CC7C32927C011006344F7 /* PoliticsAppApp.swift in Sources */,
 				544C7F56293448D900598853 /* Categories.swift in Sources */,
