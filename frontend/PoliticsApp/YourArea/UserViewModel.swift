@@ -20,11 +20,6 @@ final class UserVM: ObservableObject {
     
     var isValidForm: Bool {
         //Check if field is empty
-        guard !user.zipCode.isEmpty else {
-            alertItem = AlertContext.invalidForm
-            return false
-        }
-        
         guard isValidZip else{
             alertItem = AlertContext.invalidZip
             return false
