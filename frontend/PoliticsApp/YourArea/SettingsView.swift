@@ -52,5 +52,6 @@ struct SettingsView: View {
             .onAppear() {
                 userVM.retrieveUser()
             }
+    
     }
 }

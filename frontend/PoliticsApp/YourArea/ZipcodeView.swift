@@ -11,6 +11,7 @@ struct ZipcodeView: View {
     @StateObject var userVM = UserVM()
     
     //TODO: Make screen refreshable and see if that can make the your area screen appear
+    
     var body: some View {
         NavigationView{
             Form{
